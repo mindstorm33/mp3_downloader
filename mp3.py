@@ -1,11 +1,10 @@
 #!python3
 
-import sys, pyperclip, time
+import sys,time
 from selenium import webdriver 
 
 browser = webdriver.Chrome()
 search = ' '.join(sys.argv[1:])
-# search = 'Anderson .Paak - Trippy'
 
 browser.get('https://youtube.com')
 search_box = browser.find_element_by_tag_name('input')
